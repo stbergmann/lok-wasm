@@ -13,7 +13,7 @@ QA_ENV_DIR="$BASE_DIR/qa-env"
 if [[ "$container" = "podman" ]]; then
   source "/emsdk/emsdk_env.sh"
 else
-  source "$SCRIPT_DIR/../emsdk/emsdk_env.sh"
+  source "$BASE_DIR/emsdk/emsdk_env.sh"
 fi
 cd "$BASE_DIR/libreoffice-core"
 echo "Building LOK"
